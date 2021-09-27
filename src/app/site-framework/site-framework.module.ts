@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { NevbarComponent } from './nevbar/nevbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,12 +16,14 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],exports:[
     HeaderComponent,
     NevbarComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    
   ]
 })
 export class SiteFrameworkModule { }

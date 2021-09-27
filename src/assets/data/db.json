@@ -1,9 +1,96 @@
 {
     "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+      { "id": 1, "product  name": "json-server", "author": "typicode" }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
+    "products": [
+     
+     { "id": 1,
+      "categoryId": 1, 
+      "productName": "polo T shirts",
+      "description":"When your web visitors are unsure about which product to purchase, they look for suggestions what to buy. They’re often swayed to buy a product with the highest number of positive reviews..",
+      "rating":"5 star",
+      "price":165,
+      "productImg":"http://localhost:4200/assets/images/t1.jpg",
+      "isAvailable":true,
+      "color":"blue",
+      "reviews":10
+      },
+      { "id": 2,
+        "categoryId": 2, 
+        "productName": "Sports T shirts",
+        "description":"When your web visitors are unsure about which product to purchase ",
+        "rating":"5 star",
+        "price":300,
+        "productImg":"http://localhost:4200/assets/images/t2.jpg",
+        "isAvailable":true,
+        "color":"red",
+        "reviews":10
+        },
+        { "id": 3,
+          "categoryId": 3, 
+          "productName": "Sports Shoes",
+          "description":"When your web visitors are unsure about which product to purchase ",
+          "rating":"5 star",
+          "price":500,
+          "productImg":"http://localhost:4200/assets/images/s3.jpg",
+          "isAvailable":true,
+          "color":"pure lather",
+          "reviews":10
+          },
+          { "id": 4,
+            "categoryId": 3, 
+            "productName": "White shoes",
+            "description":"When your web visitors are unsure about which product to purchase  ",
+            "rating":"5 star",
+            "price":900,
+            "productImg":"http://localhost:4200/assets/images/s2.jpg",
+            "isAvailable":true,
+            "color":"white",
+            "reviews":10
+            },
+            { "id": 5,
+              "categoryId": 4, 
+              "productName": "Red me",
+              "description":"When your web visitors are unsure about which product to purchase  ",
+              "rating":"5 star",
+              "price":30000,
+              "productImg":"http://localhost:4200/assets/images/m1.jpg",
+              "isAvailable":true,
+              "color":"sky blue",
+              "reviews":10
+              },
+              { "id": 6,
+                "categoryId": 4, 
+                "productName": "i phone 12 pro",
+                "description":"When your web visitors are unsure about which product to purchase ",
+                "rating":"5 star",
+                "price":200000,
+                "productImg":"http://localhost:4200/assets/images/m3.jpg",
+                "isAvailable":true,
+                "color":"golden",
+                "reviews":10
+                },
+                { "id": 7,
+                  "categoryId": 5, 
+                  "productName": "jeans Men pant",
+                  "description":"When your web visitors are unsure about which product to purchase  ",
+                  "rating":"5 star",
+                  "price":1200,
+                  "productImg":"http://localhost:4200/assets/images/j1.jpg",
+                  "isAvailable":true,
+                  "color":"red",
+                  "reviews":10
+                  }
     ],
-    "profile": { "id":1, "name": "typicode" }
+    "profile": [{ "id":1, "name": "typicode" }],
+    "categories": [
+      { "id": 1, "categoryName": "polo T shirts" },
+      { "id": 2, "categoryName": "elo T shirts" },
+      { "id": 3, "categoryName": "Shoes" },
+      { "id": 4, "categoryName": "Men jeans" },
+      { "id": 5, "categoryName": "Mobile" }
+
+    ]
+
+
   }

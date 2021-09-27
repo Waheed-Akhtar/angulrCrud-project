@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, RouterLink } from '@angular/router';
+import { ProductsRoutingModule } from './products/products-routing.module';
 const routes: Routes = [{ path: 'products', loadChildren: () => import('./products/products.module').then(module => module.ProductsModule) }
 
 
@@ -10,7 +11,9 @@ const routes: Routes = [{ path: 'products', loadChildren: () => import('./produc
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ProductsRoutingModule,
+   
   ],
   exports: [RouterModule]
 })

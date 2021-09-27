@@ -5,20 +5,20 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products.component';
 import { Routes,RouterModule } from '@angular/router';
 import { AddProductComponent } from './add-product/add-product.component';
-import { ViewProductsComponent } from './view-products/view-products.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewAllProductsComponent } from './view-all-products/view-all-products.component';
 import { UpdateProductsComponent } from './update-products/update-products.component';
 import { ProductsByCategoryComponent } from './products-by-category/products-by-category.component';
 import { ProductsByDateComponent } from './products-by-date/products-by-date.component';
+import { SiteFrameworkModule } from '../site-framework/site-framework.module';
 
 
 @NgModule({
   declarations: [
     ProductsComponent,
     AddProductComponent,
-    ViewProductsComponent,
+    ViewProductComponent,
     DeleteProductComponent,
     ViewProductComponent,
     ViewAllProductsComponent,
@@ -28,9 +28,11 @@ import { ProductsByDateComponent } from './products-by-date/products-by-date.com
   ],
   imports: [
     CommonModule,
+    RouterModule,
+    SiteFrameworkModule,
 
     ProductsRoutingModule,
-    // RouterModule.forChild (productModule)
+    //  RouterModule.forChild(routes:any)
   ]
 })
 export class ProductsModule { 
@@ -38,3 +40,5 @@ export class ProductsModule {
     console.log("prosucts Module lodaded")
   }
 }
+
+

@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { OrdersModule} from './orders/orders.module'
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { ProductsModule } from './products/products.module';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SiteFrameworkModule } from './site-framework/site-framework.module';
   ],
   imports: [
     BrowserModule,
-    ProductsModule,
+    HttpClientModule,
+// ProductsModule,
     OrdersModule,
     AppRoutingModule,
     RouterModule,
